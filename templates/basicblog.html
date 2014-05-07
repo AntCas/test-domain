@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Basic Blog</title>
+    </head>
+	    <body>
+        <h1>Basic Blog</h1>	
+		<hr>
+		
+		{% for entry in entrys %}
+			<div class="entry">
+				<div class="entry-title">{{entry.title}}</div>
+				<pre class="entry-body">{{entry.entry}}</pre>
+			</div>
+		{% endfor %}
+    </body>
+</html>
